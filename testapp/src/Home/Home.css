@@ -1,0 +1,32 @@
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* upto 767 width */
+
+.paddingT{
+    padding-top:10px;
+}
+
+.card-body{
+	background-color:#FFFFFF;
+}
+.navbar{
+    padding-left:0px !important;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.nav3{
+float:left;
+}
+.nav4{
+    float:left;
+}
