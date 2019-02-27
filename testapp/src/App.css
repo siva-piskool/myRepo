@@ -74,7 +74,7 @@ radio {
 	color: #fca200;
 	height:58px;
 	width:97px;
-	padding-top:45px;
+	padding-top:28px;
 	
 	
 }
@@ -406,4 +406,9 @@ div.dataTables_wrapper div.dataTables_paginate {
 		font-size: 18px;
 	}
 }
-
+/* for toggle items*/
+@media (min-width: 576px) {
+	.nav2 {
+		display: none!important;
+	}
+}

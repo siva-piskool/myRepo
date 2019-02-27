@@ -1,8 +1,0 @@
-.col-sm-4{
-    max-width:29.333% !important ;
-}
-@media (min-width: 576px) {
-	.pc-vision {
-		width:100%;
-	}
-}

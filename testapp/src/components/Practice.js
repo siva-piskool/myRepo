@@ -6,85 +6,76 @@ import "../App.css";
 class Practice extends Component {
     constructor(props) {
         super(props);
-        this.state = [
-            {
-                title: "Facilities",
-                description: "",
-                collapseTarget: "collapseOne",
-                collapseTargetId: "#collapseOne",
-                des1: "Smart classrooms",
-                des2: "Well-equipped Science laboratories with dedicated work stations",
-                des3: "Computer suites",
-                des4: "Excellent libraries",
-                des5: "State-of-the-art Auditorium",
-                des6: "Dedicated Art and Music rooms",
-                des7: "Language rooms",
-                des8: "Sports fields – Basketball Court, Cricket Field, etc.,",
-                des9: "Independent Indoor Game Rooms",
-                des10: "Well-maintained swimming pool with national trainers",
-                des11: "Well-maintained horse riding tacks with jockey trainers",
-                des12:"Well-maintained swimming pool with national trainers",
-                des13:"Well-maintained horse riding tacks with jockey trainers",
-                des14:"Well-equipped infirmary",
-                class:"fa fa-chevron-right  pc-c3 ",
-                class1:"pc-c1"
+        this.state = {
+            Facilities:[
+                    {   title:"Facilities",
+                        text:"Smart classrooms",
+                    },
+                    {    title:"",
+                        text:"Well-equipped Science laboratories with dedicated work stations",
+                    },
+                    {   title:"",
+                        text:"Computer suites",
+                    },
+                    {   title:"",
+                        text:"Excellent libraries",
+                    },
+                    {   title:"",
+                        text:"State-of-the-art Auditorium",
+                    },
+                    {   title:"",
+                        text:"Dedicated Art and Music rooms",
+                    },
+                    {   title:"",
+                        text:"Language rooms",
+                    },
+                    {   title:"",
+                        text:"Sports fields – Basketball Court, Cricket Field, etc.,",
+                    },
+                    {   title:"",
+                        text:"Independent Indoor Game Rooms",
+                    },
+                    {   title:"",
+                        text:"Well-maintained swimming pool with national trainers",
+                    },
+                    {   title:"",
+                        text:"Well-maintained horse riding tacks with jockey trainers",
+                    },
+                    {   title:"",
+                        text:"Well-equipped infirmary",
+                    },
+                  
 
-            },
-            {
-                title: "What We Do",
-                description: "",
-                collapseTarget: "collapseTwo",
-                collapseTargetId: "#collapseTwo",
-                des1: "We develop a passion for learning",
-                des2: "Helping each of our students fulfill the potential",
-                des3: "Providing students scrupulous academics",
-                des4: "We create light through knowledge, students will find the way",
-                des5: "Providing safe and educational environment",
-                des6: "We provide what students will like!",
-                class:"fa fa-chevron-right  pc-c1   ",
-                class1:"pc-c3",
+                ],
+            
+        }
 
-            },
+           
             
-            
-        ]
+        
     }
     render() {
-        const items = this.state.map((data, index) => {
-            return (
-                <div className="dummy">
-                    <div className="" id={data.heading}>
-                        <h5 className="mb-0">
-                        {data.title}
-                    </h5>
-                    </div>
-                    <div className=" pc-bg1 col-sm-6">
-                        <p className={`${data.class}`}>
-                        <span className={`${data.class1}`}>
-                        {data.des1} {data.des2}
-                        </span> <br/>
-                        <span className={`${data.class1}`}>
-                         {data.des2}
-                        </span>
-                        </p><br/>
-                        
-                        
-                        </div>
-                       
-                    </div>
-                
+        const items = this.state.Facilities.map((data, index) => {
+            return (<div>
+                <h4>{data.title}</h4>
+                <p className="fa fa-chevron-right  pc-c1 " >
+                  <span className="pc-c3">{data.text}</span>
+                </p>
+                  </div>
+                    
+               
             );
         });
         return (<div>
-            <div className="Data">
-                
+            
+               
                     {items}
-                
-            </div>
+               
+            
 
         </div>);
 
     }
 }
 
-export default Practice;
+export default Practice ;

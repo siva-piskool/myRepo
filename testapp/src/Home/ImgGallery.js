@@ -1,10 +1,10 @@
 
 import React, { Component } from "react";
 
-import "./App.css";
-import "./App1.css"
+import "../App.css";
+import "./Home.css"
 
-class App1 extends Component {
+class ImgGallery extends Component {
     constructor(props) {
         super(props);
         this.state = [
@@ -41,7 +41,7 @@ class App1 extends Component {
             return (
                 <div className={`col-sm-4 pc-vmv pc-${data.cls}`}>
                  <span>
-                     <img src={require(`./images/i-${data.image}.png`)} alt="" width='110' height='110'/>
+                     <img src={require(`../images/i-${data.image}.png`)} alt="" width='110' height='110'/>
                  </span><br/>
                  <h4>{data.title}</h4>
                  <p>{data.description}</p>
@@ -57,4 +57,4 @@ class App1 extends Component {
     }
 }
 
-export default App1;
+export default ImgGallery;

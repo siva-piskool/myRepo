@@ -1,12 +1,4 @@
-.content{
-    height:608px;
-    width:1170px;
-    padding-top:10px;
-}
-.text{
-    padding-top:24px;
-}
-.hz{
-    margin-top:125px;
-   
+.container{
+    width: 100%;
+    height: 100%;
 }
