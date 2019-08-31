@@ -19,7 +19,8 @@ class AboutScreen extends Component{
 }
 const DrawerNavigator=createDrawerNavigator({
     Home:HomeScreen,
-    About:AboutScreen
+    About:AboutScreen,
+    
 },
 {
     hideStatusBar: true,
@@ -28,5 +29,6 @@ const DrawerNavigator=createDrawerNavigator({
     contentOptions: {
       activeTintColor: '#fff',
       activeBackgroundColor: '#6b52ae',
+     
     }})
     export default createAppContainer(DrawerNavigator);
