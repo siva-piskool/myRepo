@@ -1,38 +1,55 @@
-import React,{Component} from 'react';
-import {View,Text, Button,StyleSheet,TouchableOpacity} from 'react-native';
-export default class Btn extends Component{
-    render(){
-        return(<View style={styles.container}>
-            {/* <View style={styles.btn} >
-                <Button title="btn1" />
-            </View> */}
-            <TouchableOpacity style={styles.btn}>
-                <Text style={{textAlign:"center"}}>1</Text>
-            </TouchableOpacity>
-            <View >
-                <Button title="1" />
-            </View>
-        </View>)
-    }
-}  
-const styles=StyleSheet.create(
-  {
-      container:{
-          
-          flexDirection:"row",
-          justifyContent:"space-around",
-          margin:20,
-        
-      },
-      btn:{
-          width:50,
-          textAlign:"center",
-          color:"white",
-        borderRadius:50,
-        borderWidth:2,
-        backgroundColor:"blue",
-        borderColor:"blue"
-          }
-
-    }
-);
+import React, {Component} from 'react';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+export default class Btn extends Component {
+  state = {title: 'Home'};
+  data1 = () => {
+    this.setState({title: 'Screen1 data'});
+  };
+  data2 = () => {
+    this.setState({title: 'Screen2 data'});
+  };
+  render() {
+    return (
+      <View>
+        <Text style={styles.header}>Header</Text>
+        <View style={styles.container}>
+          <TouchableOpacity style={styles.btn} onPress={this.data1}>
+            <Text style={{textAlign: 'center', color: 'white'}}>1</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.btn} onPress={this.data2}>
+            <Text style={{textAlign: 'center', color: 'white'}}>2</Text>
+          </TouchableOpacity>
+        </View>
+        <Text style={styles.text}>{this.state.title} </Text>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    margin: 20,
+  },
+  header: {
+    fontWeight: 'bold',
+    fontSize: 32,
+    textAlign: 'center',
+    color: 'purple',
+    margin: 20,
+  },
+  btn: {
+    padding: 5,
+    height: 50,
+    width: 50,
+    borderRadius: 100,
+    backgroundColor: 'purple',
+    color: 'white',
+  },
+  text: {
+    color: 'purple',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    fontSize: 24,
+  },
+});
