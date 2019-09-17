@@ -1,1 +1,1 @@
-Creating react app from scratch
+This Branch is completely for redux and react-redux.
