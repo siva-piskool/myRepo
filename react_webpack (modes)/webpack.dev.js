@@ -3,7 +3,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common,{
     mode:'development',
     devtool:'inline-sourece-map',
-    devServer:{
+    devserver:{
         contentBase:'./dist'
     }
 });
