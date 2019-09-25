@@ -1,4 +1,23 @@
-p{
-    font-size: 32px;
-    color:red;
+.navbar{
+    width:100%;
+    background-color:skyblue;
+    overflow: auto;
 }
+li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    font-size: 17px;
+   }
+
+.active{
+    color:red;
+    text-decoration: none;
+    outline: none;
+ }
+ .navs{
+    float: right;
+    flex-direction: row-reverse
+ }
+ 
