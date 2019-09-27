@@ -28,8 +28,8 @@ module.exports = {
           }
         ]
       },
-   
-    plugins:[
+      
+   plugins:[
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
