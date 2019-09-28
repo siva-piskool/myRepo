@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, NavLink } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+import Para from './Para';
 class Navigation extends Component {
     render() {
         return (<Router>
@@ -40,6 +42,9 @@ class Home extends Component {
     render() {
         return (<div>
             <p>Home</p>
+           <Link to="About#demo" >jump to About page section4</Link>
+           <br/>
+           <br/>
             <button onClick={() => this.props.history.goBack()} >Back</button>
             <button onClick={() => this.props.history.goForward()} >Forward</button>
         </div>)
@@ -55,6 +60,22 @@ class About extends Component {
             <button onClick={() => this.props.history.goBack()} >Back</button>
             <button onClick={() => this.props.history.goForward()} >Forward</button>
             <button onClick={() => this.props.history.push("/")}>Go to HomePage</button>
+            <section>
+                <h1>Section1</h1>
+                <Para/>
+            </section>
+            <section>
+            <h1>Section2</h1>
+            <Para/>
+            </section>
+            <section>
+            <h1>Section3</h1>
+            <Para/>
+            </section>
+            <section>
+            <h1 id="demo">Section4</h1>
+            <Para/>
+            </section>
         </div>)
     }
 }
@@ -81,7 +102,7 @@ class Services extends Component {
             <button onClick={() => this.props.history.goBack()} >Back</button>
             <button onClick={() => this.props.history.goForward()} >Forward</button>
             <button onClick={() => this.props.history.push("/")}>Go to HomePage</button>
-        </div>)
+           </div>)
     }
 }
 export default Navigation;
