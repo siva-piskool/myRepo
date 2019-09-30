@@ -1,4 +1,4 @@
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import Btn from './Components/RoundBtn/Btn.js';
-AppRegistry.registerComponent(appName, () =>Btn);
+import SimpleCal from './Components/Calc/SimpleCal.js';
+AppRegistry.registerComponent(appName, () =>SimpleCal);
