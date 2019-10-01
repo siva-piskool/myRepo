@@ -6,36 +6,40 @@ class SimpleCal extends Component{
     this.state={
         num1:0,
         num2:0,
-        add:0,
-        sub:0,
-        mul:0,
-        div:0
+        result:0,
+        tag:"Result"
     }}
+    add=()=>{
+        this.setState({result:parseInt(this.state.num1) + parseInt(this.state.num2),tag:"Addition of two numbers is :"})
+    }
+    sub=()=>{
+        this.setState({result:parseInt(this.state.num1) - parseInt(this.state.num2),tag:"Addition of two numbers is :"})
+    }
+    mul=()=>{
+        this.setState({result:parseInt(this.state.num1) * parseInt(this.state.num2),tag:"Addition of two numbers is :"})
+    }
+    div=()=>{
+        this.setState({result:parseInt(this.state.num1) / parseInt(this.state.num2),tag:"Addition of two numbers is :"})
+    }
     render(){
-        return(<View>
+        return(<View style={styles.container}>
             <Text style={styles.title}>Simple Calculator</Text>
             <View>
             <Text style={styles.label}>Enter the First Value:</Text>
             <TextInput style={styles.input} keyboardType="numeric" onChangeText={(text)=>this.setState({num1:parseInt(text)})} />
             <Text style={styles.label}>Enter the Second Value:</Text>
-            <TextInput style={styles.input} keyboardType="numeric" onChangeText={(text)=>this.setState({num2:parseInt(text)})} />
-            </View>
-           <View style={styles.btn}>
-            <Button title="add" onPress={()=>{this.setState({add:parseInt(this.state.num1) + parseInt(this.state.num2)})}} />
+            <TextInput style={styles.input} keyboardType="numeric" onChangeText={(text)=>this.setState({num2:parseInt(text)})}/>
+            <Text style={styles.label}>{this.state.tag}:<Text style={styles.result}>{this.state.result}</Text> </Text>
            </View>
-           <Text>Result is :{this.state.add}</Text>
-           <View style={styles.btn}>
-            <Button title="Sub" onPress={()=>{this.setState({sub:parseInt(this.state.num1) - parseInt(this.state.num2)})}} />
+         <View style={styles.btn}>
+            <Button title="+" onPress={this.add} />
+            <Button title="-" onPress={this.sub} />
            </View>
-           <Text>Result is :{this.state.sub}</Text>
            <View style={styles.btn}>
-            <Button title="mul" onPress={()=>{this.setState({mul:parseInt(this.state.num1) * parseInt(this.state.num2)})}} />
+            <Button title="*" onPress={this.mul} />
+            <Button title="/" onPress={this.div} /> 
            </View>
-           <Text>Result is :{this.state.mul}</Text>
-           <View style={styles.btn}>
-            <Button title="Div" onPress={()=>{this.setState({div:parseInt(this.state.num1) / parseInt(this.state.num2)})}} />
-           </View>
-           <Text>Result is :{this.state.div}</Text>
+          
         </View>)
     }
 }
@@ -44,10 +48,20 @@ const styles= StyleSheet.create({
 input:{
     borderColor:'blue',
     borderWidth:2,
-    margin:20
+    margin:20,
+    width:50
+    },
+    container:{
+        flex:1,
+        
     },
 btn:{
-    width:100,
+    margin:20,
+    width: 100,
+    fontSize:32,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
 },
 title:{
     fontSize:32,
@@ -57,6 +71,10 @@ title:{
 },
 label:{
     fontSize:20
+},
+result:{
+    fontSize:24,
+    fontWeight:"bold",
+    color:"blue"
 }
-
 }) 
