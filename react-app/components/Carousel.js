@@ -4,7 +4,7 @@ import '../node_modules/pure-react-carousel/dist/react-carousel.es.css';
 import './carousel.css';
 class Carousel extends Component{
     render(){
-        return(<CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={3} isPlaying={true}  >
+        return(<CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={3} isPlaying={true} interval={2000}>
         <Slider>
             <Slide index={0}><img src={require("./images/carousel-0.jpg")} />
            <DotGroup disableActiveDots={true} className="carousel_dot-group" ></DotGroup> </Slide>
