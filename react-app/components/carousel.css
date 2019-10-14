@@ -4,3 +4,13 @@ img{
 .indicators{
     width:100%;
 }
+.slide{
+    position:relative;
+}
+.carousel_dot-group{
+    width:100%;
+    position: absolute;
+    bottom:78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
