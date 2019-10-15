@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                         <ul className="navbar-nav ml-auto row justify-content-end d-none-768">
                         <li className="nav-item pc-menu-s">
                                         <a className="nav-link text-white" href={require('../../images/PrideBrochure_v1.pdf')} title='Brochure' target='_blank' rel="noopener noreferrer">Brochure</a>
-                                    </li> 
+                                    </li>   
                             <li className="nav-item pc-menu-s">
                                 <NavLink className="nav-link text-white" to="/enquiry-form">Enquiry Form</NavLink>
                             </li>
