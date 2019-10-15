@@ -4,6 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import Header from './components/Header/Header';
+import Header from './common/Header';
 
-ReactDOM.render(<Header id="Hello"/>, document.getElementById('root'));
+ReactDOM.render(<Header/>, document.getElementById('root'));

@@ -36,7 +36,7 @@ module.exports = {
       },
       //file-loader to bundle all png/jpg/jpeg/gif files.
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(pdf|png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',

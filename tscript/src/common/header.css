@@ -1,0 +1,160 @@
+header {
+  background-color: #ffffff;
+  min-height: 115px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  padding: 0rem 1rem !important;
+}
+
+.navbar-nav{
+  margin-bottom: -12px !important;
+}
+
+.navbar-collapse {
+  margin-top: -54px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+      margin-top: -34px;
+  }
+}
+
+.navbar-brand {
+  padding-bottom: 0;
+}
+
+.navbar-brand>p {
+  margin-bottom: 0;
+}
+
+.navbar-toggler:hover {
+  background-color: #ddd;
+}
+
+.p-relative {
+  position: relative;
+  margin-right: -32px !important;
+  margin-left: -32px !important;
+}
+
+.btn-position {
+  position: absolute;
+  right: 0%;
+  top: 70px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.outline-none:focus {
+  outline: none;
+}
+
+.b-none {
+  border: none !important;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.d-none-768 {
+  margin-top: -70px;
+  margin-right: -30px !important;
+}
+
+.pride {
+  font-family: Times New Roman, Times;
+  font-size: 45px;
+  text-align: right;
+  color: #fca200;
+  position: relative;
+  top: 2%;
+  left: -8px;
+}
+
+.int-school {
+  font-family: Arial;
+  font-size: 16px;
+  text-align: right;
+  color: #515151;
+  height: 5px;
+  position: relative;
+  top: -10px;
+  left: -9px;
+}
+
+.school {
+  top: 6px;
+}
+
+.pc-menu {
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+  font-family: Arial;
+  font-size: 18px;
+  margin: 15px 2px 0px 2px;
+  padding: 1px 7px;
+}
+
+.pc-menu0 {
+  background-color: #75757e;
+}
+
+.pc-menu-s {
+  border-radius: 4px;
+  background-color: #00a2e1;
+  font-family: Arial;
+  font-size: 15px;
+  margin: 15px 2px 0px 5px;
+  padding: 7px;
+}
+
+.pc-menu-s>a {
+  line-height: 2px !important;
+  color: #ffffff !important;
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .container {
+      max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+      max-width: 100%;
+  }
+  .navbar-collapse {
+      margin-top: 12px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .d-none-768 {
+      display: none !important;
+  }
+  .nav-link {
+      padding-top: 3px;
+      padding-bottom: 3px;
+  }
+  .mb2 {
+      margin-bottom: 0.5rem !important;
+  }
+  .responsive{
+      margin: 8px -15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .pc-menu {
+      margin-top: 0px;
+      font-size: 15px;
+  }
+  
+}
