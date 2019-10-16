@@ -4,5 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-import Footer from './common/Footer/Footer';
-ReactDOM.render(<Footer/>, document.getElementById('root'));
+import './App.css';
+import Campus from './components/Campus/Campus';
+ReactDOM.render(<Campus/>, document.getElementById('root'));
