@@ -5,5 +5,6 @@ import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './App.css';
-import Campus from './components/Campus/Campus';
-ReactDOM.render(<Campus/>, document.getElementById('root'));
+
+import Admissions from './components/Admissions/Admissions';
+ReactDOM.render(<Admissions/>, document.getElementById('root'));
