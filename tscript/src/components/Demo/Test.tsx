@@ -9,7 +9,7 @@ import React,{Component} from 'react';
      state:IState;
      constructor(props:IProps){
          super(props);
-         this.state={empid:100};
+         this.state={empid:0};
 }
 render(){
     return(<div>
