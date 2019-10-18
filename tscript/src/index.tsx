@@ -5,5 +5,5 @@ import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './App.css';
-import Carousel from './common/Home/Carousel';
-ReactDOM.render(<Carousel/>, document.getElementById('root'));
+import Form from './components/Contact/Form';
+ReactDOM.render(<Form/>, document.getElementById('root'));

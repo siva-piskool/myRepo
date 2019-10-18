@@ -1,0 +1,54 @@
+.offset-md-2{
+    margin-left:15% !important;
+}
+@media screen and (max-width:768px){
+    .offset-md-2{
+        margin-left:-2% !important;
+    }
+}
+label{
+    font-weight: bold;
+}
+.col-form-label,.form-control{
+    font-size: 14px;
+}
+h2{
+    font-size: 20px !important;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn{
+    font-size: 14px;
+}
+.btn:hover{
+    background-color: #ccc;
+}
+.pc-p{
+    padding: 4px 9px !important;
+}
+.pc-btn2:hover{
+    color: #ffffff;
+}
+.btn-contact{
+    margin-left: 15% !important;
+}
+@media (max-width: 768px){
+    .btn-contact{
+        margin-left: -2% !important;
+    }
+}
+@media (min-width: 768px){}
+.control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
