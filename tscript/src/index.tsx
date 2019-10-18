@@ -5,6 +5,5 @@ import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './App.css';
-
-import Carousel from './common/Home/Carousel/Carousel';
+import Carousel from './common/Home/Carousel';
 ReactDOM.render(<Carousel/>, document.getElementById('root'));

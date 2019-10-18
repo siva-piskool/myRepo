@@ -3,7 +3,6 @@ import {
     NavLink, BrowserRouter
 } from 'react-router-dom';
 import './header.css';
-
 const Header: React.FC = () => {
     return (<BrowserRouter> <header>
         <div className="container">
