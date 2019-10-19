@@ -5,5 +5,5 @@ import 'jquery';
 import "popper.js";
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './App.css';
-import Form from './components/Contact/Form';
-ReactDOM.render(<Form/>, document.getElementById('root'));
+import Enquiry from './components/Enquiry/Enquiry';
+ReactDOM.render(<Enquiry/>, document.getElementById('root'));
