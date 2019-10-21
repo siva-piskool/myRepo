@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Counter() {
  const [count, setCount] = useState(0);
+useEffect(()=>{
+    document.title=`increment by ${count}` 
+})
 function increment(){
     setCount(count + 1);
 }

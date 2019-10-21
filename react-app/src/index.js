@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
-import Counter from "../components/Hooks/Counter";
-ReactDOM.render(<Counter />, document.getElementById('root'));
+import Exp2 from "../components/Hooks/Exp2";
+ReactDOM.render(<Exp2 />, document.getElementById('root'));
