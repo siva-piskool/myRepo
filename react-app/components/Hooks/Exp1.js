@@ -5,6 +5,14 @@ export default function Exp1(){
     useEffect(()=>{
         document.title= name + " "+surname;
     })
+    const [width, setWidth]=useState(window.innerWidth);
+    useEffect(()=>{
+        const handleResize =()=>setWidth(window.innerWidth);
+        window.addEventListener("resize",handleResize);
+        return()=>{}
+
+        }
+    )
     function handleNameChange(e){
         setName(e.target.value);
     }
@@ -19,6 +27,10 @@ export default function Exp1(){
         <section>
             <label>SurName:</label>
             <input value={surname} onChange={handlesurNameChange} />
+        </section>
+        <section>
+            <label>width:</label>
+           <p>{width}</p>
         </section>
     </div>)
 }
