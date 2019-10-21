@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 export default function Exp1(){
     const [name,setName]=useState("Mahi");
     const [surname,setsurName]= useState('Prince');
+    useEffect(()=>{
+        document.title= name + " "+surname;
+    })
     function handleNameChange(e){
         setName(e.target.value);
     }
