@@ -7,8 +7,8 @@ export default function HooksCarousel(){
     return(<CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={5} isPlaying={true} interval={2000}>
         <Slider>
             {images.map(img=>(
-                <Slide index={0}>
-                <img key={img.id} src={require(`../../images/carousel-${img.id}.jpg`)} />
+                <Slide key={img.id} index={img.id}>
+                <img  src={require(`../../images/carousel-${img.id}.jpg`)} />
                 <DotGroup disableActiveDots={true} className="carousel_dot-group" ></DotGroup>
                 </Slide>
             ))}

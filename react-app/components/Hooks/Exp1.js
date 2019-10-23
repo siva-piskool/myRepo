@@ -14,7 +14,7 @@ export default function Exp1(){
         setsurName(e.target.value);
     }
     return(<div>
-        <section>
+        <section >
             <label>Name:</label>
             <input value={name} onChange={handleNameChange} />
         </section>
