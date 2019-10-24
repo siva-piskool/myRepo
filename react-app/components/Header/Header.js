@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Navbar, Nav, Row } from "react-bootstrap";
 import "./Header.css";
 export default function Header() {
+  const[header,setPage]=useState([]);
+useEffect(()=>{
+  fetch('http://localhost:3000/header')
+  .then(response=>response.json())
+  .then((res)=>{
+    setPage(res)
+  })
+})
   return (
     <div>
       <header>
@@ -18,39 +26,15 @@ export default function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <div className="pc-menu pc-menu0">
-                  <Nav.Link to="About" className="text-white">
-                    About
-                  </Nav.Link>
-                </div>
-                <div className="pc-menu pc-menu0">
-                 
-                  <Nav.Link to="Campus" className="text-white">
-                    Campus
-                  </Nav.Link>
-                </div>
-
-                <div className="pc-menu pc-menu0">
-                  <Nav.Link to="Admissions" className="text-white">
-                    Admissions
-                  </Nav.Link>
-                </div>
-
-                <div className="pc-menu pc-menu0">
-                 
-                  <Nav.Link to="Gallery" className="text-white">
-                    Gallery
-                  </Nav.Link>
-                </div>
-
-                <div className="pc-menu pc-menu0">
-                <Nav.Link to="Contact" className="text-white">
-                    Contact
-                  </Nav.Link>
-                </div>
+              {header.map(head=>(
+                 <div key={head.id} className="pc-menu pc-menu0">
+                 <Nav.Link href={head.page} className="text-white">
+                  {head.page}
+                 </Nav.Link>
+               </div>
+              ))}
               </Nav>
-             
-            </Navbar.Collapse>
+             </Navbar.Collapse>
           </Navbar>
         </div>
       </header>
