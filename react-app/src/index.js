@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SlideShow from "../components/Home/Gallery-SlideShow/SlideShow";
 
-import HomeCarousel from "../components/Home/Carousel";
-
-ReactDOM.render(<HomeCarousel />, document.getElementById('root'));
+ReactDOM.render(<SlideShow />, document.getElementById('root'));
