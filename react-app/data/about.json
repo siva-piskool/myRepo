@@ -1,0 +1,84 @@
+{
+    "facilities":
+        [
+            { "id":"A1",
+               "title1":"pc-c3",
+               "title2":"pc-c1",
+               "text" :" Smart classrooms"
+
+            },
+            { "id":"A2",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Well-equipped Science laboratories with dedicated work stations"
+ 
+             },
+             { "id":"A3",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Computer suites"
+ 
+             },
+             { "id":"A4",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :"  Excellent libraries"
+ 
+             },
+             { "id":"A5",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" State-of-the-art Auditorium"
+ 
+             },
+             { "id":"A6",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :"Dedicated Art and Music rooms"
+ 
+             },
+             { "id":"A7",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Language rooms"
+ 
+             },
+             { "id":"A8",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Sports fields – Basketball Court, Cricket Field, etc.,"
+ 
+             },
+             { "id":"A9",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Independent Indoor Game Rooms"
+ 
+             },
+             { "id":"A10",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Well-maintained swimming pool with national trainers"
+ 
+             },
+             { "id":"A11",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :"Well-maintained horse riding tacks with jockey trainers"
+ 
+             },
+             { "id":"A12",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Well-equipped infirmary"
+ 
+             },
+             { "id":"A7",
+                "title1":"pc-c3",
+                "title2":"pc-c1",
+                "text" :" Language rooms"
+ 
+             }
+
+        ]
+    }
