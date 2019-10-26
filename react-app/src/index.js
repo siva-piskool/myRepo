@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SlideShow from "../components/Home/Gallery-SlideShow/SlideShow";
+import Card from "../components/Home/card/Card";
 
-ReactDOM.render(<SlideShow />, document.getElementById('root'));
+
+
+ReactDOM.render(<Card />, document.getElementById('root'));
