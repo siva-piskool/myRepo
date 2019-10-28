@@ -2,5 +2,5 @@ import React from "react";
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ExpCommon from "../Hooks/ExpCommon";
-ReactDOM.render(<ExpCommon />, document.getElementById('root'));
+import About from "../components/About/About";
+ReactDOM.render(<About />, document.getElementById('root'));
