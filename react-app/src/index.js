@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Contact from "../components/Contact/Contact";
 import './App.css';
-ReactDOM.render(<Contact />, document.getElementById('root'));
+import ExpCommon from "../Hooks/ExpCommon";
+ReactDOM.render(<ExpCommon />, document.getElementById('root'));
