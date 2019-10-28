@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ContactForm from "../components/ContactForm";
-ReactDOM.render(<ContactForm />, document.getElementById('root'));
+import Contact from "../components/Contact/Contact";
+import './App.css';
+ReactDOM.render(<Contact />, document.getElementById('root'));
