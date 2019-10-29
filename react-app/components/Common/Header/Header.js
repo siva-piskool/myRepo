@@ -12,11 +12,10 @@ useEffect(()=>{
 })
   return (
     <div>
-      <header>
-        <div className="container">
-          <Navbar bg="light" expand="lg">
+      <header className="container-fluid bg-light">
+        <Navbar bg="light" expand="lg" className="container">
             <Navbar.Brand to="#home">
-              <img src={require("../../images/logo-pc.png")} />
+              <img src={require("../../../images/logo-pc.png")} />
             </Navbar.Brand>
             <Navbar.Brand to="#home" className="mr-auto">
               <div className="pride">Pride</div>
@@ -36,7 +35,7 @@ useEffect(()=>{
               </Nav>
              </Navbar.Collapse>
           </Navbar>
-        </div>
+        
       </header>
     </div>
   );

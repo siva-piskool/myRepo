@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import {CarouselProvider,Slider, Slide} from 'pure-react-carousel';
-import {Container,Row} from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
 export default function SlideShow(){
     const[slides,setSlide]=useState([]);
     useEffect(()=>{
@@ -8,7 +8,7 @@ export default function SlideShow(){
         .then((response)=>response.json())
         .then((res)=>{setSlide(res)})
     })
-    return(<Container>
+    return(<div className="container">
         <Row>
         <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={10} isPlaying={true} interval={2000} visibleSlides={4}>
     <Slider>
@@ -19,6 +19,6 @@ export default function SlideShow(){
         </Slider>
     </CarouselProvider>
     </Row>
-        </Container>
+        </div>
    )
 }

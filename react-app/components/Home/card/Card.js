@@ -13,7 +13,7 @@ export default function CardSection() {
   return (
     <Row className="m-2" >
     {card.map(cards=>(
- <Card key={cards.id} className={`pc-vmv col-md-4 pc-${cards.img} m-1`}>
+ <Card key={cards.id} className={`pc-vmv col-md-4 pc-${cards.img} m-1 w-100 `}>
  <Card.Body>
    <img src={require(`../../../images/i-${cards.img}.png`)} />
    <Card.Title>{cards.title}</Card.Title>
@@ -21,6 +21,6 @@ export default function CardSection() {
  </Card.Body>
 </Card>
     ))}
-    </Row>
+    </Row>                      
   );
 }

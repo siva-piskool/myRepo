@@ -22,7 +22,7 @@ export default function HomeCarousel() {
         <Carousel.Item key={img.id} >
         <img
           className="d-block w-100"
-          src={require(`../../images/carousel-${img.pic}.jpg`)}
+          src={require(`../../../images/carousel-${img.pic}.jpg`)}
         />
         <Carousel.Caption>
         {img.caption}
