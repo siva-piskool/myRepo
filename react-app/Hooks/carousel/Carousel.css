@@ -8,8 +8,19 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-button{
+/*radio buttons
+/* button{
     border-radius:50%;
     padding:5px;
     margin:1px;
+} */
+button{
+width:20px;
+margin:10px;
+height:4px;
+   
+}
+button,select{
+   color:black !important;
+   
 }

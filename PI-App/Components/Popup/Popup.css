@@ -1,0 +1,84 @@
+.pi-works-container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 200ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.pi-works-popup {
+  padding: 25px;
+  background: #fff;
+  border-radius: 25px;
+  width: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  margin:5px;
+}
+.pi-works-popmodel{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-template-areas: "a b b";
+  height: 100%;
+}
+.pi-works-popmodel1{
+grid-template-areas: "a b b";
+}
+.pi-works-popmodel2 {
+  grid-template-areas: "b b a";
+
+}
+.pi-works-popmodel3 {
+  
+  grid-template-areas: "a b c";
+ 
+}
+.pi-works-item1 {
+  grid-area: a;
+}
+.pi-works-item2 {
+  grid-area: b;
+}
+.pi-works-item3 {
+  grid-area: c;
+}
+.pi-works-indicators {
+  position: absolute;
+  cursor: pointer;
+  top: 40%;
+  right: 2px;
+}
+.pi-works-dots {
+  height: 15px;
+  width: 15px;
+  background: #bbb;
+  border-radius: 50%;
+  display: block;
+  margin: 5px;
+}
+a:active{
+  background:black;
+}

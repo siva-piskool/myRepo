@@ -4,6 +4,7 @@ import Card from "../Home/card/Card";
 import Box from "../Home/box/Box";
 import Footer from '../Common/Footer/Footer';
 import Header from '../Common/Header/Header';
+
 export default function Home() {
   return (
     <div>

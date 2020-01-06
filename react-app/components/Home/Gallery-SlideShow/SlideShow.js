@@ -10,7 +10,7 @@ export default function SlideShow(){
     })
     return(<div className="container">
         <Row>
-        <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={10} isPlaying={true} interval={2000} visibleSlides={4}>
+        <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={125} totalSlides={10} isPlaying={false} interval={2000} >
     <Slider>
         {slides.map(slide=>(
         <Slide key={slide.id} >
